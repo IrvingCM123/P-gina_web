@@ -1,0 +1,38 @@
+@api = http://localhost:4000/Servidor
+
+### Mostrar Usuarios
+GET {{api}}/MostrarUsuarios
+
+### Ingresar Usuarios
+POST {{api}}/AltaUsuarios
+Content-Type: application/json
+
+{
+    "Nombre_Usuario": "José Jair",
+    "Apellido_Usuario": "Lopez Herrera",
+    "Correo_Electronico": "Prueba2@gmail.com",
+    "Contraseña": "Contraseña2"
+}
+
+### Encontrar Usuario
+GET {{api}}/EncontrarUsuario/1
+
+### Borrar Usuario
+DELETE  {{api}}/EliminarUsuario/1
+
+###
+GET {{api}}/ContarUsuarios
+
+###
+PUT {{api}}/ActualizarUsuario/Prueba2@gmail.com
+Content-Type: application/json
+
+{
+     "Nombre_Usuario": "José Jair",
+    "Apellido_Usuario": "Lopez Herrera",
+    "Correo_Electronico": "Prueba2@gmail.com",
+    "Contraseña": "Contraseña24245"
+}
+
+### Iniciar Página
+

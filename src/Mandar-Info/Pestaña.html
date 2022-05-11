@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/Normalice.css" />
+    <link rel="stylesheet" href="/src/css/estilos.css" />
+    <link rel="stylesheet" href="/src/css/CajaComen.css" />
+    <link rel="stylesheet" href="/src/css/estiloProg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="/src/img/Waifu.jpg">
+    <link rel="stylesheet" href="/src/css/Header.css">
+    <link rel="stylesheet" href="/src/css/Mandar.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <h1><b id="Logo1">Waifu.Net</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="/src/Index.html"> Inicio</a></li>
+                        <li><a href="/src/Catalogo/Pestaña.html"></i>Catalogo</a></li>
+                        <li><a href="/src/Caja-Comentarios/Pestaña.html"></i>Caja de comentarios</a></li>
+                        <li><a href="/src/Mandar-Info/Pestaña.html"> Guardar Informacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        <div id="Barra-Lateral">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+    <div class="container-all" id="move-content">
+
+    <div class="imagen"> </div>
+
+    <div id="Caja" class="About-us sombra Cuerpo">
+
+        <section class="About-us-Titulo H1 Espacio" id="Titulo">
+            Ingresa la Informacion aquí
+        </section>
+
+        <div id="Formulario-Info">
+            <label class="Espacio"  style="margin-top:7px;">Palabra</label>
+            <label class="Espacio" style="margin-top:7px;">Significado</label>
+            <label class="Espacio" style="margin-top:95px;">Imagen</label>
+        </div>
+
+        <div id="Formulario-Rellenar" >
+                    <form method="post" enctype="multipart/form-data" action="/upload" class="Elegir">
+                        <div class="Espacio">
+                            <input type="text" class="Respuesta Tamaño" name="Nombre" placeholder="Nombre...">
+                        </div>
+
+                        <div class="Espacio">
+                            <textarea class="Respuesta Comentario" name="Mensaje" placeholder="Comentario..." ></textarea>
+                        </div>
+
+                        <div class="Espacio Mostrar-Img">
+                            <input class="Elegir" type="file" name="file" id="seleccionArchivos" accept="image/*">
+                            <img id="imagenPrevisualizacion" class="Imagen-Mos">
+                            <script src="/src/Mandar-Info/Mostrar-Info.js"></script>   
+                        </div>
+
+                        <input type="submit" name="Mensaje" value="Enviar" class="Boton">
+
+                    </form>
+        </div>
+
+        <div class="Informacion">
+            <h1 class="H1">Contactanos!</h1>
+            <ul>
+                <li>Número Telefonico: <br> <p>+52 ###-###-####</p></li>
+                <li>Correo Electronico: <br> <p> Ejemplo@Gmail.com</p></li>
+                <li>Facebook: <br> <p>Ejemplo.com</p> </li>
+            </ul>
+        </div>
+    </div>
+      
+    <div class="loader"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".loader").fadeOut("slow");
+    });
+</script>
+
+</html>
