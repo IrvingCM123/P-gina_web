@@ -19,7 +19,7 @@ app.use(cors());
 app.use(morgan("dev")); // middlewares
 app.use(express.urlencoded({ extended: false })); //Recibir datos desde formularios html
 app.use(express.json()); //Usar JSON
-app.use(express.static(path.join(__dirname, "public")));// static files
+app.use(express.static(path.join(__dirname, 'public')));// static files
 
 
 // Routes
