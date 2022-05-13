@@ -2,7 +2,7 @@
   "name": "pagina-web",
   "version": "1.0.0",
   "description": "",
-  "main": "/src/Conexion/index.js",
+  "main": "/src/index.js",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.10",
     "abbrev": "^1.1.1",
@@ -77,6 +77,7 @@
     "duplexer3": "^0.1.4",
     "ecdsa-sig-formatter": "^1.0.11",
     "ee-first": "^1.1.1",
+    "ejs": "^3.1.8",
     "electron-to-chromium": "^1.4.130",
     "emoji-regex": "^8.0.0",
     "encodeurl": "^1.0.2",
@@ -332,9 +333,9 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "dev": "nodemon src/Conexion/index.js --exec babel-node",
+    "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d Api",
-    "start": "node ./Api/Conexion/index.js"
+    "start": "node src/indes.js"
   },
   "keywords": [],
   "author": "",
