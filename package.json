@@ -334,7 +334,7 @@
   },
   "scripts": {
     "dev": "nodemon src",
-    "start": "node src"
+    "start": "node src/views/Index.html"
   },
   "keywords": [],
   "author": "",
