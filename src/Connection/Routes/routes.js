@@ -11,11 +11,11 @@ import {
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("Index");
+  res.render("Index.html");
 });
 
 router.get("/Catalogo", (req, res) => {
-  res.render("Catalogo")
+  res.render("Catalogo.html")
 });
 
 router.get("/CajaDeComentarios", (req, res) => {
