@@ -11,8 +11,13 @@ const app = express();
 let port;
 
 // settings
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.set("port", config.port || 4000);
 app.set("views", path.join(__dirname, "views"));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 app.set("view engine", "ejs");
 
 app.use(cors());
@@ -21,9 +26,9 @@ app.use(express.urlencoded({ extended: false })); //Recibir datos desde formular
 app.use(express.json()); //Usar JSON
 app.use(express.static(path.join(__dirname, 'public')));// static files
 
-app.use(routes);
 
-app.listen(app.get('port'))
+// Routes
+app.use(routes);
 
 console.log("Servidor Ejecutandose");
 console.log('Puerto-Server: ', app.get('port'))

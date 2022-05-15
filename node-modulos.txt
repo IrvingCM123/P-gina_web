@@ -1,0 +1,4 @@
+npm i express ejs morgan nodemon mssql cors dotenv 
+npm i @babel/core @babel/cli @babel/preset-env @babel/node nodemon -D
+npm i @babel/plugin-transform-runtime -D
+npm i -g now
